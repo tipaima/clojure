@@ -879,3 +879,111 @@ clj꞉core꞉> 
 ;   fib(20) = 6765
 nil
 clj꞉core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉core꞉> 
+; Evaluating file: core.clj
+nil
+clj꞉core꞉> 
+(ns-interns 'core)
+{main #'core/main, get-fib-cache #'core/get-fib-cache, fib #'core/fib, -main #'core/-main, read-number #'core/read-number}
+clj꞉core꞉> 
+(core/main)
+; 
+; =======================================
+; 1. Продолжить
+; 2. Выход
+; Выбор: 
+; 
+; Введите номер числа Фибоначчи: 
+; 
+; "Elapsed time: 0.1751 msecs"
+; 
+; Fib(5) = 5
+; 
+; --------------
+; 1. Продолжить
+; 2. Выход
+; Выбор: 
+; 
+; Введите номер числа Фибоначчи: 
+; 
+; "Elapsed time: 0.0095 msecs"
+; 
+; Fib(5) = 5
+; 
+; --------------
+; 1. Продолжить
+; 2. Выход
+; Выбор: 
+; 
+; Введите номер числа Фибоначчи: 
+; 
+; "Elapsed time: 0.0131 msecs"
+; 
+; Fib(5) = 5
+; 
+; --------------
+; 1. Продолжить
+; 2. Выход
+; Выбор: 
+; 
+; Введите номер числа Фибоначчи: 
+; 
+; "Elapsed time: 0.0177 msecs"
+; 
+; Fib(5) = 5
+; 
+; --------------
+; 1. Продолжить
+; 2. Выход
+; Выбор: 
+; 
+; Введите номер числа Фибоначчи: 
+; 
+; "Elapsed time: 0.0661 msecs"
+; 
+; Fib(20) = 6765
+; 
+; --------------
+; 1. Продолжить
+; 2. Выход
+; Выбор: 
+; 
+; Введите номер числа Фибоначчи: 
+; 
+; "Elapsed time: 0.012 msecs"
+; 
+; Fib(20) = 6765
+; 
+; --------------
+; 1. Продолжить
+; 2. Выход
+; Выбор: 
+; 
+; Введите номер числа Фибоначчи: 
+; 
+; "Elapsed time: 0.0146 msecs"
+; 
+; Fib(20) = 6765
+; 
+; --------------
+; 1. Продолжить
+; 2. Выход
+; Выбор: 
+; 
+; Введите номер числа Фибоначчи: 
+; 
+; "Elapsed time: 0.0104 msecs"
+; 
+; Fib(20) = 6765
+; 
+; --------------
+; 1. Продолжить
+; 2. Выход
+; Выбор: 
+; 
+; Sending interrupt.; Evaluation was interrupted
+clj꞉core꞉> 
+; Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1767).
+; null
