@@ -720,3 +720,162 @@ clj꞉user꞉> 
 ; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:719:1).
 ; No such var: core/main
 clj꞉user꞉> 
+; Evaluating file: core.clj
+; 
+; ; clj  core 
+; Syntax error reading source at (REPL:41:1).
+; EOF while reading, starting at line 20
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+clj꞉core꞉> 
+(core/main)
+; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:730:1).
+; No such var: core/main
+clj꞉core꞉> (require '[core :as c])
+nil
+clj꞉core꞉> 
+(c/main)
+; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:736:1).
+; No such var: c/main
+clj꞉core꞉> 
+(require '[core :as c] :reload)
+; Syntax error reading source at (core.clj:41:1).
+; EOF while reading, starting at line 20
+clj꞉core꞉> 
+(require '[core :refer :all] :reload-all)
+; Syntax error reading source at (core.clj:41:1).
+; EOF while reading, starting at line 20
+clj꞉core꞉> 
+(load-file "core.clj")
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; core.clj (Не удается найти указанный файл)
+clj꞉core꞉> 
+; nREPL connection failed, port 53229: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed for client: nrepl-client-1, port: 53229
+; Connecting using "Clojure (projectless)" project type.
+; Connecting ...
+; Reading port file: file:///c%3A/Users/Nikro/Desktop/%D0%A1%D0%9F%D0%B8%D0%9C%D0%9F/1/.nrepl-port ...
+; Using host:port localhost:53229 ...
+; Hooking up nREPL sessions on port 53229...
+; nREPL connection failed, port 53229: AggregateError
+; Failed connecting.
+; Prompting for nREPL connection...
+; Hooking up nREPL sessions on port 53229...
+; nREPL connection failed, port 53229: AggregateError
+; Failed connecting.
+; Hooking up nREPL sessions on port 53229...
+; nREPL connection failed, port 53229: AggregateError
+; Failed connecting.
+; Connect aborted.
+; Jacking in...
+; Connecting using "Clojure (projectless)" project type.
+; Starting Jack-in: pushd c:\Users\Nikro\Desktop\СПиМП\1 & java -jar "c:\Users\Nikro\.vscode\extensions\betterthantomorrow.calva-2.0.566\deps.clj.jar" -Sdeps "{:deps {nrepl/nrepl {:mvn/version,\"1.5.1\"},cider/cider-nrepl {:mvn/version,\"0.58.0\"}}}" -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]" & popd
+; Using host:port 127.0.0.1:54035 ...
+; Hooking up nREPL sessions on port 54035...
+; Connected session: clj, port: 54035
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+(core/main)
+; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:781:1).
+; No such namespace: core
+clj꞉user꞉> 
+(require '[core :as c])
+; Syntax error reading source at (core.clj:41:1).
+; EOF while reading, starting at line 20
+clj꞉user꞉> 
+(require '[core :as c])
+; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:789:1).
+; namespace 'core' not found
+clj꞉user꞉> 
+(require '[core :as c])
+nil
+clj꞉user꞉> (c/main)
+; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:795:12).
+; No such var: c/main
+clj꞉user꞉> 
+(c/main)
+; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:799:1).
+; No such var: c/main
+clj꞉user꞉> 
+(core/main)
+; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:803:1).
+; No such var: core/main
+clj꞉user꞉> 
+(require '[core :as c])
+nil
+clj꞉user꞉> 
+(c/main)
+; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:810:1).
+; No such var: c/main
+clj꞉user꞉> 
+(ns-interns 'core)
+{}
+clj꞉user꞉> 
+(c/-main)
+; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:817:1).
+; No such var: c/-main
+clj꞉user꞉> 
+; Evaluating file: core.clj
+; 
+; ; clj  core 
+; Syntax error reading source at (REPL:41:1).
+; EOF while reading, starting at line 20
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+clj꞉core꞉> 
+(c/-main)
+; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:828:1).
+; No such namespace: c
+clj꞉core꞉> 
+(core/main)
+; Syntax error compiling at (c:\Users\Nikro\Desktop\СПиМП\1\.calva\repl.calva-repl:832:1).
+; No such var: core/main
+clj꞉core꞉> 
+(require '[core :as cr])
+nil
+clj꞉core꞉> 
+(ns-interns 'cr)
+; Execution error at core/eval10349 (repl.calva-repl:839).
+; No namespace: cr found
+clj꞉core꞉> 
+(ns-interns 'core)
+{get-fib-cache #'core/get-fib-cache, fib #'core/fib}
+clj꞉core꞉> 
+(core/get-fib-cache)
+{0 0, 1 1}
+clj꞉core꞉> 
+(ns-interns 'core)
+{get-fib-cache #'core/get-fib-cache, fib #'core/fib}
+clj꞉core꞉> 
+; Evaluating file: core.clj
+; мемоизация:
+; Fib(10) = 55
+; Fib(15) = 610
+; Fib(20) = 6765
+; 
+; кэш после вычислений:
+;   fib( 0) = 0
+;   fib( 1) = 1
+;   fib( 2) = 1
+;   fib( 3) = 2
+;   fib( 4) = 3
+;   fib( 5) = 5
+;   fib( 6) = 8
+;   fib( 7) = 13
+;   fib( 8) = 21
+;   fib( 9) = 34
+;   fib(10) = 55
+;   fib(11) = 89
+;   fib(12) = 144
+;   fib(13) = 233
+;   fib(14) = 377
+;   fib(15) = 610
+;   fib(16) = 987
+;   fib(17) = 1597
+;   fib(18) = 2584
+;   fib(19) = 4181
+;   fib(20) = 6765
+nil
+clj꞉core꞉> 
